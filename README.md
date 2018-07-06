@@ -4,6 +4,7 @@ just like Batmans Utility Belt does for him.
 Our goal is to regulary add solutions that might be neccesery for me or for others in some situations,
 or just things that are intersting to code.
 We will relay **only** on open-source libraries
+This project will include anything from basic sorting algorithms, to specific frame work features.
 
 ## Programming Languages
 We start with Java as it is out native language.
