@@ -10,7 +10,7 @@ We will relay **only** on open-source libraries
 This project will include anything from basic sorting algorithms, to specific frame work features.
 
 ## Programming Languages
-We start with Java as it is out native language.
+We start with Java as it is our native language.
 In the future we would like to add solutions in :
 - JavaScript
 - TypeScript
