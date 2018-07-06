@@ -1,0 +1,6 @@
+package algorithms;
+
+public class Sort {
+
+	public static inPlaceMergeSort(int[] array)
+}

@@ -1,0 +1,8 @@
+package algorithms;
+
+public class Sort {
+
+	public static int[]  mergeSort(int[] array) {
+		return array;
+	}
+}

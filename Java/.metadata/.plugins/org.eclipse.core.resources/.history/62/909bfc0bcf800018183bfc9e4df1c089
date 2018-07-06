@@ -1,0 +1,9 @@
+package algorithms;
+
+public class Search {
+	
+	public static <T> int binarySearch(T... array) {
+		return 0;
+		
+	}
+}
