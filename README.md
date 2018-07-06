@@ -1,4 +1,7 @@
 # Utility-Belt
+
+![alt text](https://pre00.deviantart.net/7913/th/pre/f/2011/290/7/a/batman_logo_by_machsabre-d4d6rrn.png)
+
 This project is meant to serve us, programmers, with solution to every day problems,
 just like Batmans Utility Belt does for him.
 Our goal is to regulary add solutions that might be neccesery for me or for others in some situations,
