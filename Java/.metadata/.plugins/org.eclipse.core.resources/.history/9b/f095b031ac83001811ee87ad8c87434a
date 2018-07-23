@@ -1,0 +1,72 @@
+package algorithms;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class InsertionSortTest {
+
+
+	class Number {
+		private int i;
+		
+		public Number(int i) {
+			this.i = i;
+		}
+		
+		public int getI() {
+			return i;
+		}
+	}
+
+	class ComparableNumber implements Comparable<ComparableNumber> {
+
+		private int i;
+		public ComparableNumber(int i) {
+			this.i = i;
+		}
+		
+		public int getI() {
+			return i;
+		}
+
+		@Override
+		public int compareTo(ComparableNumber o) {
+			if(i < o.i) {
+				return -1;
+			}
+			if(i > o.i) {
+				return 1;
+			}
+			return 0;
+		}
+
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		//Size of arrays
+		int k = 1000;
+
+		int[] intArr = new int[k];
+		float[] floatArr = new float[k];
+		double[] doubleArr = new double[k];
+		short[] shortArr = new short[k];
+		long[] longArr = new long[k];
+
+		for(int idx = 1; idx < k; idx++) {
+			intArr[idx] = idx;
+			floatArr[idx] = idx;
+			doubleArr[idx] = idx;
+			shortArr[idx] = (short)idx;
+			longArr[idx] = idx;
+		}
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

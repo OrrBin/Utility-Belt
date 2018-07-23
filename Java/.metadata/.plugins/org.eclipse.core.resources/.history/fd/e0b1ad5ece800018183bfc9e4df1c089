@@ -1,5 +1,0 @@
-package dataStructures.trees.binaryTrees;
-
-public interface BinaryTree<T,K> {
-
-}

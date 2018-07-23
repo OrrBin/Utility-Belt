@@ -1,0 +1,36 @@
+package algorithms;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class QuickSort {
+
+	
+	@Before
+	public void setUp() throws Exception {
+		//Size of arrays
+		int k = 1000;
+		
+		int[] intArr = new int[k];
+		float[] floatArr = new float[k];
+		double[] doubleArr = new double[k];
+		short[] shortArr = new short[k];
+		long[] longArr = new long[k];
+		
+		for(int idx = 1; idx < k; idx++) {
+			intArr[idx] = idx;
+			floatArr[idx] = idx;
+			doubleArr[idx] = idx;
+			shortArr[idx] = (short)idx;
+			longArr[idx] = idx;
+		}
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

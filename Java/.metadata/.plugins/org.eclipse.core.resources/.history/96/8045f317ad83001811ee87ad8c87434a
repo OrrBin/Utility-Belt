@@ -1,0 +1,113 @@
+package algorithms;
+
+import static org.junit.Assert.*;
+
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class InsertionSortTest {
+
+
+	class Number {
+		private int i;
+		
+		public Number(int i) {
+			this.i = i;
+		}
+		
+		public int getI() {
+			return i;
+		}
+	}
+
+	class ComparableNumber implements Comparable<ComparableNumber> {
+
+		private int i;
+		public ComparableNumber(int i) {
+			this.i = i;
+		}
+		
+		public int getI() {
+			return i;
+		}
+
+		@Override
+		public int compareTo(ComparableNumber o) {
+			if(i < o.i) {
+				return -1;
+			}
+			if(i > o.i) {
+				return 1;
+			}
+			return 0;
+		}
+
+	}
+	
+	private int[] intArr;
+	private float[] floatArr;
+	private double[] doubleArr;
+	private short[] shortArr;
+	private long[] longArr;
+	
+	private int[] intArrSorted;
+	private float[] floatArrSorted;
+	private double[] doubleArrSorted;
+	private short[] shortArrSorted;
+	private long[] longArrSorted;
+
+
+	@Before
+	public void setUp() throws Exception {
+		//Size of arrays
+		int k = 1000;
+
+		intArr = new int[k];
+		floatArr = new float[k];
+		doubleArr = new double[k];
+		shortArr = new short[k];
+		longArr = new long[k];
+
+		intArrSorted = new int[k];
+		floatArrSorted = new float[k];
+		doubleArrSorted = new double[k];
+		shortArrSorted = new short[k];
+		longArrSorted = new long[k];
+		
+		List<Integer> perm = new LinkedList<>();
+		for(int idx = 1; idx < k; idx++) {
+			perm.add(idx);
+		}
+		
+		Collections.shuffle(perm);
+		
+		for(int idx = 1; idx < k; idx++) {
+			intArr[perm.get(idx)] = idx;
+			floatArr[perm.get(idx)] = idx;
+			doubleArr[perm.get(idx)] = idx;
+			shortArr[perm.get(idx)] = (short)idx;
+			longArr[perm.get(idx)] = idx;
+			
+			intArr[idx] = idx;
+			floatArr[idx] = idx;
+			doubleArr[idx] = idx;
+			shortArr[idx] = (short)idx;
+			longArr[idx] = idx;
+		}
+		
+	}
+
+	@Test
+	public void test() {
+		assertArrayEquals(intArr, intArrSorted);
+		assertArrayEquals(floatArr, floatArrSorted, 0.01);
+		assertArrayEquals(intArr, intArrSorted);
+		assertArrayEquals(intArr, intArrSorted);
+		
+	}
+
+}
