@@ -1,0 +1,5 @@
+package com.utilitybelt.graphics.image.processing;
+
+public class PixelStream {
+
+}

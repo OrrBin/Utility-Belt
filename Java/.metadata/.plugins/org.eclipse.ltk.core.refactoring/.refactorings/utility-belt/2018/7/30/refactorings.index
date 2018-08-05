@@ -5,3 +5,11 @@
 1532381658060	Rename type 'InsertionSortTest'
 1532381681579	Rename type 'SortTest'
 1532381690149	Copy compilation unit
+1532808984394	Rename package 'algorithms'
+1532809117598	Rename package 'com.utilitybelt.graphics.image.proccessing'
+1532809141111	Rename type 'Utilities'
+1532809159200	Rename type 'Utils'
+1532811081151	Rename type 'MaxHolder'
+1532812027030	Rename package 'algorithms'
+1532813727899	Rename field 'max'
+1532813782601	Rename local variable 'maxCount'

@@ -1,0 +1,33 @@
+package com.utilitybelt.test.graphics.image.processing;
+
+import java.awt.Color;
+import java.awt.image.BufferedImage;
+import java.io.File;
+
+import javax.imageio.ImageIO;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import com.utilitybelt.graphics.image.processing.ImageProcessingUtils;
+
+public class DominantColorTest {
+
+	private static final String IMAGE_PATH="D:\\projects\\utility-belt\\Java\\utility-belt\\resources\\RED.png";
+	private BufferedImage img;
+	
+	@Before
+	public void setUp() throws Exception {
+		img = ImageIO.read(new File(IMAGE_PATH));
+		
+	}
+	
+	@Test
+	public void test() {
+		int result = ImageProcessingUtils.getDominantColor(img, new ImageProcessingUtils.BufferedImagePixelExtractor(img));
+		
+		Color color = new Color(result, true)
+		System.out.println(result);
+	}
+
+}

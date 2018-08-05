@@ -1,0 +1,8 @@
+package com.utilitybelt.graphics.image.processing;
+
+import java.util.stream.IntStream;
+
+@FunctionalInterface
+public static interface PixelStream {
+	IntStream pixelStream();
+}
