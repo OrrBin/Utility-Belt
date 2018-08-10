@@ -1,0 +1,20 @@
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    margin-top: 25px;
+    margin-left: 15px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.buttonsContainer {
+    
+}
+
+.icon {
+    height: 54px;
+    width: 54px;
+    font-size: 54px;
+}

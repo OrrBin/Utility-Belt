@@ -1,3 +1,30 @@
-<p>
-  audio-player works!
-</p>
+<div>
+    <!-- <canvas #canvasEl  width="1520" height="700"></canvas> -->
+    <mat-card class="mat-elevation-z4 card">
+        <button mat-button >
+            <mat-icon class="icon">skip_previous</mat-icon>
+        </button>
+        <div *ngIf="isPlaying;then pauseButton else playButton">here is ignored</div>    
+        <ng-template #pauseButton>
+            <button mat-button >
+                <mat-icon class="icon" (click)="pause()">pause</mat-icon>
+            </button>
+        </ng-template>
+        <ng-template #playButton>
+            <button mat-button >
+                <mat-icon class="icon" (click)="play()" *ngIf="!isPlaying">play_arrow</mat-icon>
+            </button>
+        </ng-template>
+        <!-- <button mat-button >
+            <mat-icon class="icon" (click)="pause()" *ngIf="isPlaying">pause</mat-icon>
+        </button> -->
+        <!-- <button mat-button >
+            <mat-icon class="icon" (click)="play()" *ngIf="!isPlaying">play_arrow</mat-icon>
+        </button> -->
+        <button mat-button>
+            <mat-icon class="icon" (click)="nextSong()">skip_next</mat-icon>
+        </button>
+        
+    </mat-card>
+</div>
+

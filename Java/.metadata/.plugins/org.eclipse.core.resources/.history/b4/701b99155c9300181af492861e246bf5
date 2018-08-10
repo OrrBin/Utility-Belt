@@ -1,9 +1,0 @@
-package com.utilitybelt.graphics.image.processing;
-
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter @Setter class IntHolder {
-	private int count = 0;
-	private int color;
-}

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="DominantColorTest" project="utility-belt" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.utilitybelt.test.graphics.image.processing.DominantColorTest" time="0.091">
-    <testcase name="test" classname="com.utilitybelt.test.graphics.image.processing.DominantColorTest" time="0.091"/>
-  </testsuite>
-</testrun>

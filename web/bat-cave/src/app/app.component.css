@@ -1,0 +1,11 @@
+.visContatiner {
+    width: 100%;
+    height: 100%;
+}
+
+.audioPlayer {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    width: 98%;
+}
