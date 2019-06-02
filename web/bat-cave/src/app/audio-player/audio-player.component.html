@@ -6,13 +6,13 @@
         </button>
         <div *ngIf="isPlaying;then pauseButton else playButton">here is ignored</div>    
         <ng-template #pauseButton>
-            <button mat-button >
-                <mat-icon class="icon" (click)="pause()">pause</mat-icon>
+            <button mat-button (click)="pause()">
+                <mat-icon class="icon">pause</mat-icon>
             </button>
         </ng-template>
         <ng-template #playButton>
-            <button mat-button >
-                <mat-icon class="icon" (click)="play()" *ngIf="!isPlaying">play_arrow</mat-icon>
+            <button mat-button (click)="play()">
+                <mat-icon class="icon">play_arrow</mat-icon>
             </button>
         </ng-template>
         <!-- <button mat-button >
@@ -21,8 +21,8 @@
         <!-- <button mat-button >
             <mat-icon class="icon" (click)="play()" *ngIf="!isPlaying">play_arrow</mat-icon>
         </button> -->
-        <button mat-button>
-            <mat-icon class="icon" (click)="nextSong()">skip_next</mat-icon>
+        <button mat-button (click)="nextSong()">
+            <mat-icon class="icon">skip_next</mat-icon>
         </button>
         
     </mat-card>

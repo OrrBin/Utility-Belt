@@ -1,0 +1,3 @@
+class AudioRecord {
+  name: string;
+}
